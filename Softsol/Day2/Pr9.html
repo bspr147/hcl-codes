@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function sum() {
+            if (frmCalc.firstNo.value == "") {
+                document.getElementById("err1").innerHTML = "Please Enter First No";
+                return;
+            }
+            else {
+                document.getElementById("err1").innerHTML = "";
+            }
+
+            if (frmCalc.secondNo.value == "") {
+                document.getElementById("err2").innerHTML = "Please Enter Second No";
+                return;
+            }
+            else {
+                document.getElementById("err2").innerHTML = "";
+            }
+
+            var a, b, c;
+            a = parseInt(frmCalc.firstNo.value);
+            b = parseInt(frmCalc.secondNo.value);
+            c = a + b;
+            frmCalc.result.value = c;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="frmCalc">
+    <center>
+        <table border="3">
+            <tr>
+                <th colspan="2" align="center">
+                    Calculation Form
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    First No
+                </th>
+                <td>
+                    <input type="text" name="firstNo" />
+                    <span id="err1"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Second No
+                </th>
+                <td>
+                    <input type="text" name="secondNo" />
+                    <span id="err2"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Result</th>
+                <td>
+                    <input type="text" name="result" />
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="button" onclick="sum()" value="Sum" /> &nbsp;&nbsp;&nbsp;
+                    <input type="button" value="Sub" /> &nbsp;&nbsp;&nbsp;
+                    <input type="button" value="Mult" />
+                </th>
+            </tr>
+        </table>
+    </center>
+        </form>
+</body>
+</html>

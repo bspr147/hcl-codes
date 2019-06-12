@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+
+        
+        function show() {
+            var res = "";
+            if (frmData.chkStatus.checked == true) {
+                res += "Student is Present...";
+            }
+            else {
+                res += "Student is Absent...";
+            }
+            res += "Selected Dropdown value is  " + frmData.names.value;
+
+            document.getElementById("res").innerHTML = res;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="frmData">
+        <center>
+            Status : 
+            <input type="checkbox" name="chkStatus" onchange="show()" /> <br /><br /> 
+            
+            <span id="res"></span> <br /><br /> 
+            Names : 
+            <select name="names" onchange="show()">
+                <option value="Baji">Baji</option>
+                <option value="Bhargav">Bhargav</option>
+                <option value="Divya">Divya</option>
+                <option value="Keerthi">Keerthi</option>
+            </select>
+        </center>
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function Book() {
+            this.bookId = "B001";
+            this.bookName = "The Sky is falling...";
+            this.price = 8866.44;
+        }
+
+        function show() {
+            var obj = new Book();
+            document.writeln("Book ID " + obj.bookId + " Name " + obj.bookName + " Price " + obj.price);
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <center>
+        <a href="javascript:show()">Show</a>
+       <input type="button" value="Show" onclick="show()" />
+    </center>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function doValidate() {
+            //alert("Hi");
+            a = "firstName";
+            
+            var n = "Hello";
+            n.
+            alert(a);
+            var user, pwd;
+            user = frmLogin.userName.value;
+            pwd = frmLogin.passWord.value;
+
+            if (user == "Sheik" && pwd == "Kranthi") {
+                window.open("Pr3.html");
+
+            }
+            else {
+                alert("Invalid Credentials...");
+            }
+        }
+        
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="frmLogin">
+        <center>
+        <table border="3">
+            <tr>
+                <th>User Name</th>
+                <td>
+                    <input type="text" name="userName" />
+                </td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>
+                    <input type="password" name="passWord" />
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="button" onclick="doValidate()" value="Login" />
+                </th>
+            </tr>
+        </table>
+        </center>
+    </form>
+</body>
+</html>

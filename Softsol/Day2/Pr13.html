@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function show() {
+            var radios = frmRadio.elements["gender"];
+
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    alert(radios[i].value);
+                }
+            }
+
+          
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="frmRadio">
+        Gender : 
+        <input type="radio" id="gen"  value="Male" name="gender" />  Male
+        <input type="radio" id="Radio1" value="Female" name="gender" /> Female
+        <br /><br /> 
+
+      
+        <input type="button" value="show" onclick="show()" />
+    </form>
+</body>
+</html>
