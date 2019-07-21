@@ -1,0 +1,67 @@
+You can create an object to class as
+
+class_name obj=new class_name();
+
+java.lang is the default package, that comes automatically, no need to import them. 
+
+All classes are derived from root class called java.lang.Object 
+
+Control Structures : 
+_____________________
+
+Used to define the flow of the program. 
+
+There are 2 types of control structures known as 
+
+	(i) Branching 
+
+	  if...else : Executes the statements based on the condition. 
+
+		if(condition) {
+		  statements;
+	        } else {
+	          statements;
+	        }
+
+       (ii) Looping 
+
+	while loop : This loop executes all the statements repeatedly until the condition remains true, if the condition remains false, then it comes out of the loop. For every loop, basically there are 3 phases known as 
+
+	(i) Initialization 
+
+       (ii) Condition 
+
+      (iii) Increment or Decrement 
+
+Initialization performed at the beginning of the loop. 
+
+Condition performed at the conditional part of the loop. 
+
+Increment/Decrement performed before closing the loop. 
+
+while(condition) {
+ ...
+ ...
+}
+
+for loop : Executes the statements repeatedly until the condition remains true, if condition remains false, then it comes out of the loop. 
+
+for(initilization;condition;increment/decrement) {
+   statements;
+}
+
+
+switch...case : Used to define menu-driven programs. 
+
+
+
+
+
+
+
+
+
+
+
+
+
