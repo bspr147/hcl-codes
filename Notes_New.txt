@@ -53,6 +53,65 @@ for(initilization;condition;increment/decrement) {
 
 switch...case : Used to define menu-driven programs. 
 
+In Java, strings are immutable. means once they are assigned we cannot change the value by using any string methods. 
+
+Arrays : 
+  
+An array is the finite ordered set of homogeneous elements, means all the elements belongs to same data type. 
+
+All the elements of the array are stored in successive memory locations. 
+
+declaration : 
+
+int[] a=new int[]{12,5,7,44};
+
+a[0]=12;
+a[1]=5;
+a[2]=7;
+a[3]=44;
+
+
+int[] a=new int[]{12,5,77,34,23,73};
+		
+		System.out.println("Elements of Array are  ");
+		
+//		for(int i=0;i<a.length;i++) {
+//			System.out.println(a[i]);
+//		}
+		
+		for (int i : a) {
+			System.out.println(i);
+		}
+
+In the above foreach loop, at first i points to the first element in array A, after processing the first element, it checks next element is there or not by using hasNext(), if hastNext() returns true, it moves to the next element by using next(), it repeats as soon as hasNext() returns false. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
