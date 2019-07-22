@@ -1,0 +1,3 @@
+npm install simple-react-validator --save
+
+npm install --save material-ui axios react-tap-event-plugin 
