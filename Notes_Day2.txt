@@ -1,0 +1,198 @@
+int x;
+
+x=12.0F;
+x="Hello";
+x=12;
+x=12.5;
+
+Object is type that can store any type as value type/reference type/custom type. 
+
+If you define above code as 
+
+Object x;
+
+x=12.0F;
+x="Hello";
+x=12;
+x=12.5;
+
+
+Boxing and Unboxing : Process of converting value types to reference type known as boxing, reference types to value types known as unboxing. 
+
+
+Boxing Example :
+
+Object ob1=12;
+Object ob2="Welcome";
+Object ob4=12.5;
+
+Unboxing : 
+__________
+
+int x=(Integer)ob1;
+String y=(String)ob2;
+double c=(Double)ob4;
+
+
+What is the difference between == and equals() 
+
+
+Method overloading : 
+
+The concept of using the same method name w.r.t. different parameters or different data types known as method overloading. Here, the method name must be same. 
+
+
+class Test 
+{
+   int a,b;
+   a=5;
+   b=7;
+}
+
+Constructor : A constructor is a special member, that which is used to initilize the member variables of the class. It is special because, it has the same name as that of class name. 
+
+Rules : 
+________
+
+	1) It will not contains any return type.
+
+	2) It will not return any value. 
+
+	3) It will be invoked automatically once the instance of the class 		created. 
+
+	4) A constructor can be overloaded. 
+
+There are 2 types of constructors known as 
+
+1) static constructor : These are called class constructors, which are used to initilize the static variables of the class, these constructors are invoked automatically before the control reaches the entry point. These constructors cannot be overloaded. 
+
+*** In java, we dont have static constructors, we can replace them by using static block as ***
+
+static {
+...
+...
+}
+
+2) instance constructor : These are the constructors that which are invoked automatically once the instance of the class created. These constructors can be overloaded. 
+
+Write a program as Create a class as TimeZone which takes hrs and mins.
+
+
+Assume T1 is 3 hrs 40 mins
+
+       T2 is 2 hrs 35 mins
+
+       T3 is 6 hrs 15 mins 
+
+
+static methods : These are the methods, that which are to be called by using class name, no object required to call those methods. 
+
+static variables : These are the variables that which retains values irrespective of type of object.  
+
+
+Inheritance : The concept of deriving a new class from already existing class known as inheritance, the class which is derived known as derived class, the class from which it is derived known as base class. Through inheritance, we can reduce the size of the program. 
+
+
+class C1 {
+...
+...
+}
+
+class C2 extends C1 {
+...
+...
+...
+}
+
+
+Once you create an object to C2 class, then you can access all public/protected and friendly members of base class. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
