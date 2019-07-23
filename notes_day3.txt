@@ -1,0 +1,144 @@
+public class Test extends String {
+   public static void main(String[] args) {
+     System.out.println("Welcome");
+   }
+}
+
+
+void show(int x) {
+...
+...
+}
+
+show();
+show(12);
+show(12,5);
+show(12,6,33);
+
+super keyword : 
+
+If you want to pass values from derived class to base class, then we need the help of super keyword. 
+
+Super has 2 forms as 
+
+	1) super as a keyword
+
+	2) super as a constructor 
+
+
+Abstract class :
+________________
+
+
+A class that which can be created, but not implemented and instantiated known as abstract class. Abstract class contains both abstract and non-absract methods, abstract methods needs to be overrided mandetorily by the derived class. 
+
+abstract class class_name {
+  abstract method1();
+  abstract method2();
+}
+
+Who falls under abstract class, needs to implement method1() and method2() mandetorily. 
+
+interfaces : Java does not support the concept of multiple inheritance, to achieve this we need the help of interfaces. An interface contains method declaration, and the implementation can be done in the corresponding class, you can add more than one interface to the particular class. 
+
+Differences between interface and abstract class : 
+__________________________________________________
+
+
+
+
+	1) An abstract class contains both abstract and non-abstract methods, where interface contains only abstract methods. 
+
+	2) interface methods are public and abstract by default. 
+
+	3) Multiple inheritance, can be achieved by using interfaces. 
+
+	4) An interface can be called from anywhere to anywhere. 
+
+
+interface Interface_name {
+ method1();
+ method2();
+}
+
+class class_name implements interface_name 
+
+
+Exception Handling : 
+
+	It is a mechanism of handling the runtime errors during the execution of the program. There are 2 types of errors known as 
+
+	1) Compile Time
+
+	2) Runtime 
+
+By using Exception handling, we can overcome the runtime errors. 
+
+To handle errors, we have 3 blocks. 
+
+
+1) try : This block contains statements in which there is possibility of getting runtime errors, the statements which are placed in this block are treated as heavy weighted statements, as JVM allocates excess memory to that. 
+
+2) catch : Once exception raised in try block, then the control will be forwarded to catch block, this block contains alternative statements for exceptions raised in try block, one try block can contains multiple catch blocks. 
+
+3) finally : This block contains statements, that needs to be executed mandetorily irrespective of try and catch blocks. This block is not mandetory, but all the statements which are placed in this block are executed as mandetory statements. 
+
+
+syntax : 
+__________
+
+try {
+...
+...
+...
+} catch(Exception e) {
+...
+...
+...
+} finally {
+....
+....
+....
+}
+
+Exception is the top most class, from which all kinds of exceptions are derived. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
