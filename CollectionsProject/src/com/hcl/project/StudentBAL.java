@@ -4,9 +4,16 @@ import java.util.List;
 
 public class StudentBAL {
 
-	StringBuilder sb=new StringBuilder();
+	static StringBuilder sb=new StringBuilder();
 	
-	public boolean addStudentBal(Student objStudent) throws StudentException {
+	public void writeStudentFileBal() {
+		new StudentDAO().writeStudentFileDao();
+	}
+	
+	public void readStudentFileBal() {
+		new StudentDAO().readStudentFileDao();
+	}
+ 	public boolean addStudentBal(Student objStudent) throws StudentException {
 		boolean isAdded=true;
 		
 		if(objStudent.getSno() <= 0) {

@@ -1,10 +1,12 @@
 package com.hcl.project;
 
 import java.util.List;
+import java.util.ResourceBundle;
 import java.util.Scanner;
 
 public class StudentMain {
 
+	static ResourceBundle rb=ResourceBundle.getBundle("project");
 	public static void deleteStudent() {
 		int sno;
 		Scanner sc=new Scanner(System.in);
@@ -50,6 +52,14 @@ public class StudentMain {
 		}
 		
 	}
+	
+	public static void writeStudentFile() {
+		new StudentBAL().writeStudentFileBal();
+	}
+	
+	public static void readStudentFile() {
+		new StudentBAL().readStudentFileBal();
+	}
 	public static void addStudent() {
 		Student objStudent=new Student();
 		Scanner sc=new Scanner(System.in);
@@ -65,7 +75,7 @@ public class StudentMain {
 		try {
 			boolean res=obj.addStudentBal(objStudent);
 			if(res==true) {
-				System.out.println("Student Record Added");
+				System.out.println(rb.getString("added"));
 			}
 		} catch (StudentException e) {
 			System.out.println(e.getMessage());
@@ -82,7 +92,9 @@ public class StudentMain {
 			System.out.println("3. Search Student");
 			System.out.println("4. Update Student");
 			System.out.println("5. Delete Student");
-			System.out.println("6. Exit");
+			System.out.println("6. Write Student File");
+			System.out.println("7. Read Student File");
+			System.out.println("8. Exit");
 			System.out.println("Enter Ur Choice  ");
 			ch=sc.nextInt();
 			switch(ch) {
@@ -102,10 +114,16 @@ public class StudentMain {
 				deleteStudent();
 				break;
 			case 6 : 
+				writeStudentFile();
+				break;
+			case 7 : 
+				readStudentFile();
+				break;
+			case 8 : 
 				return;
 			default : 
 				System.out.println("Invalid Choice");
 			}
-		} while(ch!=6);
+		} while(ch!=8);
 	}
 }

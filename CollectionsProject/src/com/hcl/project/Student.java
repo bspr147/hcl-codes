@@ -1,6 +1,8 @@
 package com.hcl.project;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable {
 
 	private int sno;
 	private String name;
