@@ -1,0 +1,33 @@
+﻿<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="EMPS" type="complexTypeEmps"/>
+  <xsd:complexType name="complexTypeEmps">
+    <xsd:sequence>
+      <xsd:element name="EMP" type="complexTypeEmp" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="complexTypeEmp">
+    <xsd:sequence>
+      <xsd:element name="EMPNO" type="simpleTypeEmpno"/>
+      <xsd:element name="NAME" type="simpleTypeName"/>
+      <xsd:element name="BASIC" type="simpleTypeBasic"/>
+    </xsd:sequence>
+    <xsd:attribute name="CATEGORY" use="optional" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:simpleType name="simpleTypeEmpno">
+    <xsd:restriction base="xsd:positiveInteger">
+      <xsd:maxInclusive value="10"/>
+      <xsd:minInclusive value="1"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="simpleTypeName">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="VEERA|SWAMY|SHEIK"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="simpleTypeBasic">
+    <xsd:restriction base="xsd:positiveInteger">
+      <xsd:maxInclusive value="50000"/>
+      <xsd:minInclusive value="1000"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

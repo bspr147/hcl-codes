@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EMPS>
+  <EMP CATEGORY="PART">
+    <EMPNO COMPANY="SOFTSOL">1</EMPNO>
+    <NAME>SWAMY</NAME>
+    <BASIC>45678</BASIC>
+  </EMP>
+  <EMP CATEGORY="FULL">
+    <EMPNO>3</EMPNO>
+    <NAME>VEERA</NAME>
+    <BASIC>45666</BASIC>
+  </EMP>
+</EMPS>

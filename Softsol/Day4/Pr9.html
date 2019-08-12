@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function Emp(empno, name, sal) {
+            this.empno = empno;
+            this.name = name;
+            this.sal = sal;
+            
+        }
+        function show() {
+            var obj1 = new Emp(1, "Bhargav", 86563);
+            var obj2 = new Emp(2, "Keerthi", 58211);
+            Emp.prototype.company = "Softsol";
+
+            alert(obj1.empno + " " + obj1.name + " " + obj1.sal + " " + obj1.company);
+            alert(obj2.empno + " " + obj2.name + " " + obj2.sal + " " + obj2.company);
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        show();
+    </script>
+</body>
+</html>

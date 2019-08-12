@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function show() {
+            var myArray = [3, 'hello!', function () { return 5 }, { 'city': 'hyderabad', 'state': 'ts' }];
+            document.writeln("First Value is  " + myArray[0] + "<br/>");
+            document.writeln("Second Value is  " + myArray[1] + "<br/>");
+            document.writeln("Third Value " + myArray[2]() + "<br/>");
+            document.writeln("First Property  " + myArray[3].city + "<br/>");
+            document.writeln("Second Property  " + myArray[3].state + "<br/>");
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        show();
+    </script>
+</body>
+</html>

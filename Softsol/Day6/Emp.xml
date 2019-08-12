@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EMPS>
+  <EMP CATEGORY="PART">
+    <EMPNO>1</EMPNO>
+    <NAME>RATNA</NAME>
+    <BASIC>82222</BASIC>
+  </EMP>
+  <EMP CATEGORY="FULL">
+    <EMPNO>3</EMPNO>
+    <NAME>NARESH</NAME>
+    <BASIC>84113</BASIC>
+  </EMP>
+</EMPS>
