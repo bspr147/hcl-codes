@@ -1,0 +1,14 @@
+div.MainForm
+{
+	width : 100px;
+	padding : 10px;
+	margin : 10 auto;
+	border : 105x solid black;
+	vertical-align : center;
+	background : #3366CC;
+}
+
+body 
+{
+	text-align : center;
+} 

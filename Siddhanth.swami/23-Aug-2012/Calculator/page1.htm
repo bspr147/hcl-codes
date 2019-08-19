@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Calculator</title>
+		<link type="text/css" rel="stylesheet" href = "cssLiberty1.css"/>
+		<script src="jsLiberty1.js"></script>
+	</head>
+	<body>
+		<div class = "title">
+			<p>Calculator @ CGI</p>
+		</div>
+		<div class = "MainForm"  >		
+			<br/><br/>
+			<form name = "ipForm" id = "inputForm1" action = "" method = "GET">
+				 &nbsp1st Number : <input type = "text" id = "txtAddition1"><br/><br/>			
+				 2nd Number : <input type = "text" id = "txtAddition2"><br/><br/>
+				 Operation :   
+					<select id = "operator" onBlur = "operation()">
+						<option value="Add">&nbsp&nbsp+&nbsp&nbsp</option>
+						<option value="Sub">&nbsp&nbsp-&nbsp&nbsp</option>
+						<option value="Mul">&nbsp&nbsp*&nbsp&nbsp</option>
+						<option value="Div">&nbsp&nbsp/&nbsp&nbsp</option>
+					</select>
+					<p id = "result" color = "white">Result</p>
+			</form>		
+		</div> 
+	</body>
+</html>
