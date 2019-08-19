@@ -22,7 +22,7 @@ CREATE TABLE TransReturn(
 	Username varchar(50) NOT NULL,
 	BookId INT NOT NULL,
 	Fromdate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	Todate TIMESTAMP date
+	Todate date
 );
 
 
