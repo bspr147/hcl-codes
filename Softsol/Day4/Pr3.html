@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function dateDemo() {
+            var obj = new Date();
+            document.writeln("Todays Date is  " + obj.getDate() + "<br/>");
+            var month = obj.getMonth();
+            month = month + 1;
+            document.writeln("Month is  " + month + "<br/>");
+            document.writeln("Year is  " + obj.getFullYear() + "<br/>");
+            document.writeln("Hours  " + obj.getHours() + "<br/>");
+            document.writeln("Minutes  " + obj.getMinutes() + "<br/>");
+            document.writeln("Seconds  " + obj.getSeconds() + "<br/>");
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="dateDemo()">
+
+</body>
+</html>

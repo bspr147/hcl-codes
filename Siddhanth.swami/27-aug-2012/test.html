@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<script type="text/javascript" language = "javascript">
+    function Show() {
+        var myArray = [3, 'hello!', function () { return 5 }, { 'color': 'blue', 'budget': 25 },28];
+        document.writeln('0>' + myArray[0] + '<BR>');                  // Will output: 0>3
+        document.writeln('1>' + myArray[1] + '<BR>');                  // Will output: 1>hello!
+        document.writeln('2>' + myArray[2]() + '<BR>');                // Will output: 2>5
+        document.writeln('3>' + myArray[3].color + '<BR>');            // Will output: 3>blue
+        document.writeln('3>' + myArray[3].budget + '<BR>');           // Will output: 3>25
+		document.writeln('4>'+myArray[4].test(myArray[1])+'<BR>');
+    }
+</script>
+    <title>Untitled Page</title>
+</head>
+<body>
+<center>
+<input type="button" onclick="Show()" value="Show" />
+</center>
+</body>
+</html>

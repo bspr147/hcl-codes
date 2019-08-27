@@ -1,0 +1,16 @@
+div.MainForm
+{
+	width : 400px;
+	padding : 10px;
+	margin : 10 auto;
+	border : 105x solid black;
+	vertical-align : center;
+	background : #3366CC;
+	font-family : "Arial",Times,Serif;
+	font-weight: bold;
+}
+
+body 
+{
+	text-align : center;
+} 

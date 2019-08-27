@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.js"></script>
+    <script>
+        $(document).ready(function () {
+            var students = new Array("Lakshmi", "Mani", "Mohan", "Mounika", "Sheik");
+            for (i = 0; i < students.length; i++) {
+                $("#students").append("<option value="+students[i] +">"+students[i]+"</option>");
+            }
+        });
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <select id="students">
+
+    </select>
+</body>
+</html>

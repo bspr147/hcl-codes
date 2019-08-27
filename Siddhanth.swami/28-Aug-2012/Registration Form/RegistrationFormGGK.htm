@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<title>Registraation @ GGK</title>
+		<link type="text/css" rel="stylesheet" href = "css/RegistrationForm.css"/>
+		<script type="text/javascript" language="javascript" src="js/RegistrationForm.js">
+		</script>
+	</head>
+	<body onload="load()">
+		<br><br><br><br>
+		<div class = "MainForm" align = "Left" >			
+			<form name = "RegForm" id = "inputForm1" action = "" method = "GET">
+				&nbsp;&nbsp;&nbsp;
+				<label name = "user-id" class = "Mandatory">User Id : </label>
+				<input type = "text" class = "all" name = "txtU" />
+				<label id = "errUser-id" class = "error"></label>
+				
+				<br><br>				
+				<label name = "Pwd" class = "Mandatory">Password : </label>
+				<input type = "Password" class = "all" name = "txtP" id = "txtPassword"/>
+				
+				<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label name = "Na" class = "Mandatory">Name : </label>
+				<input type = "text" class = "all" name = "txtName" id = "txtme" size = "30">
+				
+				<br><br>&nbsp;&nbsp;
+				<label name = "Ad" class = "Optional">Address: </label>
+				<input type = "text" class = "all" name = "txtAddress" id = "txtdress" size = "30">
+				
+				<br><br>&nbsp;&nbsp;
+				<label name = "Co" class = "Mandatory">Country : </label>
+				<select class = "all" id = "Country" >
+					<option value="India">India</option>
+					<option value="America">America</option>
+					<option value="Great-Britain">Great-Britain</option>
+					<option value="Germany">Germany</option>
+				</select>
+				
+				
+				<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				
+				<label name = "Em" class = "Mandatory">Zip : </label>
+				<input type = "text" class = "all" name = "txtZip" id = "txtE" size = "15">
+				
+				<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				
+				<label name = "Em" class = "Mandatory">Email : </label>
+				<input type = "text" class = "all" name = "txtEmail" id = "txtE" size = "30">	
+				
+				<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				
+				<label name = "Gend" class = "Mandatory">Sex : </label>
+				<input type = "Radio" name = "Gender" id = "RMale"><label class = "Optional">Male</label>
+				<input type = "Radio" name = "Gender" id = "RFemale"><label class = "Optional">Female</label>
+				
+				<br><br>
+				<label name = "Abo" class = "Optional">About : </label>				
+				<textarea class = "all" id = "AboutBox" rows="2" cols="30">					
+				</textarea>
+				
+				<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+				<input class = "all" type = "button" Id = "Sub" value = "Submit" align = "center" onClick = "return ValidateForm(RegForm)">	
+			</form>		
+		</div> 
+	</body>
+</html>

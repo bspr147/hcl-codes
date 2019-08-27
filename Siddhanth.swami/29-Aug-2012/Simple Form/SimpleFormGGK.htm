@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<title>Registraation @ GGK</title>
+		<link type="text/css" rel="stylesheet" href = "css/SStyle.css"/>
+		<script type="text/javascript" language="javascript" src="js/jsSimpleForm.js">
+		</script>
+	</head>
+	<body >
+		<br><br><br><br>
+		<div class = "MainForm" align = "Left" >
+		<form name = "SimpleForm" id = "inputForm1" action = "" method = "GET">
+            
+			<label name  = "LSSN">Phone Number : </label><br/>
+            <input type = "text" class = "all" size="3" maxlength = "3" name = "txtPhn1" onkeypress="if(this.value.length == 2){txtPhn2.focus();}"/>
+		  - <input type = "text" class = "all" size="3" maxlength = "3" name = "txtPhn2" onkeypress="if(this.value.length == 2){txtPhn3.focus();}"/>
+          - <input type = "text" class = "all" size="4" maxlength = "4" name = "txtPhn3" onkeypress="if(this.value.length == 3){txtSSN1.focus();}" onblur="checkPhNumber(SimpleForm)"/>
+			
+			<br><br>
+			
+			<label name  = "LSSN">Social Security Number : </label><br/>
+            <input type = "text" class = "all" size="3" maxlength = "3" name = "txtSSN1" onkeypress="if(this.value.length == 2){txtSSN2.focus();}"/>
+		  - <input type = "text" class = "all" size="3" maxlength = "3" name = "txtSSN2" onkeypress="if(this.value.length == 2){txtSSN3.focus();}"/>
+          - <input type = "text" class = "all" size="3" maxlength = "3" name = "txtSSN3" onkeypress="if(this.value.length == 2){txttxc1.focus();}"/>
+		
+			<br><br>
+			
+			<label name  = "LSSN">Text Characters Only : </label><br/>
+            <input type = "text" class = "all" size="3" maxlength = "3" name = "txttxc1" onkeypress="if(this.value.length == 2){txttxc2.focus();}"/>
+		  - <input type = "text" class = "all" size="3" maxlength = "3" name = "txttxc2" onkeypress="if(this.value.length == 2){txttxc3.focus();}"/>
+          - <input type = "text" class = "all" size="3" maxlength = "3" name = "txttxc3" onkeypress="if(this.value.length == 2){txtAo1.focus();}"/>
+			
+				<br><br>
+			
+			<label name  = "LSSN">Alpha Only : </label><br/>
+            <input type = "text" class = "all" size="3" maxlength = "3" name = "txtAo1" onkeypress="if(this.value.length == 2){txtAo2.focus();}"/>
+		  - <input type = "text" class = "all" size="3" maxlength = "3" name = "txtAo2" onkeypress="if(this.value.length == 2){txtAo3.focus();}"/>
+          - <input type = "text" class = "all" size="3" maxlength = "3" name = "txtAo3" onkeypress="if(this.value.length == 2){txtUln1.focus();}"/>
+			<br><br>
+			
+			<label name  = "LSSN">Upper case letters & numbers : </label><br/>
+            <input type = "text" class = "all" size="3" maxlength = "3" name = "txtUln1" onkeypress="if(this.value.length == 2){txtUln2.focus();}"/>
+		  - <input type = "text" class = "all" size="3" maxlength = "3" name = "txtUln2" onkeypress="if(this.value.length == 2){txtUln3.focus();}"/>
+          - <input type = "text" class = "all" size="3" maxlength = "3" name = "txtUln3" onkeypress="if(this.value.length == 2){txtSSN2.focus();}"/>
+		
+		
+		</form>
+		</div> 
+	</body>
+</html>
+

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function book(bookId, bookName, price) {
+            this.bookId = bookId;
+            this.bookName = bookName;
+            this.price = price;
+        }
+
+        function show() {
+            var obj = new book(frmData.bookId.value, frmData.bookName.value, frmData.price.value);
+            document.getElementById("res").innerHTML = "Book Id " + obj.bookId + " Name " + obj.bookName + " Price " + obj.price;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="frmData">
+        Book ID : 
+        <input type="text" name="bookId" /> <br /><br /> 
+        Book Name : 
+        <input type="text" name="bookName" /> <br /><br /> 
+        Price : 
+        <input type="text" name="price" /> <br /><br /> 
+        <input type="button" value="Show" onclick="show()" /> <br /><br />
+        <span id="res"></span>
+    </form>
+</body>
+</html>

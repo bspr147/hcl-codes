@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function focus_cursor() {
+            //window.
+            alert("Cursor Placed...");
+        }
+
+        function change_val() {
+            alert("Value Changed...");
+        }
+
+        function change_cursor() {
+            alert("Control Left");
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="frmData">
+        <center>
+            First Name : 
+            <input type="text" onfocus="focus_cursor()" onblur="change_cursor()" onchange="change_val()" name="firstName" value="Sheik" /> <br /><br />
+            Last Name : 
+            <input type="text" name="lastName" autofocus="autofocus" /> <br /><br />
+            
+        </center>
+    </form>
+</body>
+</html>

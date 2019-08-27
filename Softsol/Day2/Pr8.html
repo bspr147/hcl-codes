@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        span {
+            color : red;
+        }
+    </style>
+    <script>
+        function show() {
+            if (frmData.firstName.value == "") {
+                document.getElementById("err1").innerHTML = "Please Enter First Name";
+                return;
+            }
+            else {
+                document.getElementById("err1").innerHTML = "";
+            }
+
+            if (frmData.lastName.value == "") {
+                document.getElementById("err2").innerHTML = "Please Enter Last Name";
+                return;
+            }
+            else {
+                document.getElementById("err2").innerHTML = "";
+            }
+            var fname, lname, fullName;
+            fname = frmData.firstName.value;
+            lname = frmData.lastName.value;
+            fullName = fname + " " + lname;
+            frmData.fullName.value = fullName;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="frmData">
+        <center>
+            <table border="3">
+                <tr>
+                    <th>First Name</th>
+                    <td>
+                        <input type="text" name="firstName" autofocus="autofocus" /> 
+                        <span id="err1"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td>
+                        <input type="text" name="lastName" /> 
+                        <span id="err2"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>FullName</th>
+                    <td>
+                        <input type="text" name="fullName" />
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <input type="button" onclick="show()" value="Show" />
+                    </th>
+                </tr>
+            </table>
+        </center>
+    </form>
+</body>
+</html>

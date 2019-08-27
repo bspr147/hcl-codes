@@ -1,0 +1,13 @@
+6) Create html page that contains material number should be entered and submit the button. Create servlet named Servlet1 in which you need to set the attribute Product Details to the Title and forward the request to Servlet2. In Servlet2, You need to get the attribute and set as header and display all the information from the Product table for the material number which the user has entered in the html page.
+
+7.      Create an Order Form that should have the material number and quantity. When submit the form the request should go to Servlet1. In Servlet1 display name,price,uom of product from Product table based on the particular material no and the request should go to Servlet2 and in that calculate Total Price(Price*Qty) for that order and display the Total price then the request should go back to the Servlet1 and prints the Footer of the html page like Thank you Visit Again.
+
+8.      Crate a html page that should list out some search engines , when select any radio button of that list then the request should redirected to the corresponding link.
+
+9.      Maintain Project Information into the database.
+
+a.      First web page should have details about Project Id, Project Name, Duration, No Of Phases and Next button
+
+b.      By clicking Next button in first page it should have the details about Resource Information like Resource Id, Resource Name, Resource Start Date ,Resource End Date , Next Resource button , Next Page Button. If user selects Next Resource button it should display the Resource Information page else if user selects the Next page button it should display the technology information page.
+
+c.      Third page contains the technology information like technology id and technology name.
