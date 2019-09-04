@@ -1,18 +1,0 @@
-
-Œsquid:S11920"XDefine a constant instead of duplicating this literal "Account No not Found..." 4 times.(Õ¿¨îüÿÿÿÿHfRCRITICALZ
-CODE_SMELL
-xsquid:S1192"IDefine a constant instead of duplicating this literal "inactive" 3 times.(ş¹å˜HgRCRITICALZ
-CODE_SMELL
-‚squid:S1192"SDefine a constant instead of duplicating this literal " Where AccountNo=?" 4 times.(£éĞHhRCRITICALZ
-CODE_SMELL
-squid:S1192"RDefine a constant instead of duplicating this literal "Account Closed..." 3 times.(»´±æHiRCRITICALZ
-CODE_SMELL
-tsquid:S2095Ç"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ú®©äşÿÿÿÿHjRBLOCKERZBUG
-tsquid:S2095”"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ú®©äşÿÿÿÿHkRBLOCKERZBUG
-Wsquid:S1148)"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHlRMINORZVULNERABILITY
-Wsquid:S1148P"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHmRMINORZVULNERABILITY
-Wsquid:S1148f"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHnRMINORZVULNERABILITY
-Xsquid:S1148…"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHoRMINORZVULNERABILITY
-Xsquid:S1148¡"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHpRMINORZVULNERABILITY
-Xsquid:S1148¹"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHqRMINORZVULNERABILITY
-Xsquid:S1148Ë"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHrRMINORZVULNERABILITY

@@ -1,9 +1,0 @@
-package com.hcl.beans;
-
-public class Calc {
-
-	private int firstNo;
-	private int secondNo;
-	
-	
-}
