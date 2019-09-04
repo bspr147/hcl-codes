@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [23/Aug/2019:09:17:57 +0530] "GET /BeanDemos/ShowStock.jsp HTTP/1.1" 200 860
+0:0:0:0:0:0:0:1 - - [23/Aug/2019:09:39:54 +0530] "GET /BeanDemos/order.html HTTP/1.1" 200 385

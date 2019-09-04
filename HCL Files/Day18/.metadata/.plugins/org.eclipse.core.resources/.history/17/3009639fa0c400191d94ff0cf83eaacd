@@ -1,0 +1,8 @@
+package com.hcl.beans;
+
+public class EmploySearch {
+
+	private int empno;
+	
+	
+}
