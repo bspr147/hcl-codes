@@ -17,3 +17,12 @@ theory int,
 
 practical int
 )
+
+Create Table Feedback 
+(
+   fid varchar(15) primary key,
+   studentName varchar(30),
+   instructor varchar(30),
+   subject varchar(30),
+   fbvalue varchar(30)
+)
