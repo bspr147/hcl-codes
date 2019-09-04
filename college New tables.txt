@@ -6,7 +6,7 @@ drop table if exists subjects;
 create table subjects
 (
 
-  subId INT primary key,
+  subId INT AUTO_INCREMENT primary key,
 
    year int,
 instructor varchar(28),
