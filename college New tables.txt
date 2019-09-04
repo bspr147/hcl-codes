@@ -1,0 +1,19 @@
+use college;
+
+
+drop table if exists subjects;
+
+create table subjects
+(
+
+  subId INT primary key,
+
+   year int,
+instructor varchar(28),
+
+subject varchar(150),
+
+theory int,
+
+practical int
+)
