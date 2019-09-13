@@ -1,0 +1,10 @@
+
+Šsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÀûŞ»úÿÿÿÿH&RMINORZ
+CODE_SMELL
+esquid:S34005"9Remove this method and declare a constant for this value.(õØÿøH(RMINORZ
+CODE_SMELL
+rsquid:S1126"AReplace this if-then-else statement by a single return statement.(¤ÏŠ²ıÿÿÿÿH'RMINORZ
+CODE_SMELL
+^squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëœŠ§Ç-H*RMINORZVULNERABILITY
+isquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ëœŠ§Ç-H+RINFOZ
+CODE_SMELL

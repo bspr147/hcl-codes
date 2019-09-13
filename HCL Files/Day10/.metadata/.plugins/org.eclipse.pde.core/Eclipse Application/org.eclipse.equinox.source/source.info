@@ -1,0 +1,5 @@
+#encoding=UTF-8
+#version=1
+net.sf.eclipsecs.checkstyle.source,8.18.0.201903231603,file:/C:/Software/eclipse-jee-mars-2-win32-x86_64/eclipse/plugins/net.sf.eclipsecs.checkstyle.source_8.18.0.201903231603.jar,-1,false
+net.sf.eclipsecs.core.source,8.18.0.201903231603,file:/C:/Software/eclipse-jee-mars-2-win32-x86_64/eclipse/plugins/net.sf.eclipsecs.core.source_8.18.0.201903231603.jar,-1,false
+net.sf.eclipsecs.ui.source,8.18.0.201903231603,file:/C:/Software/eclipse-jee-mars-2-win32-x86_64/eclipse/plugins/net.sf.eclipsecs.ui.source_8.18.0.201903231603.jar,-1,false
