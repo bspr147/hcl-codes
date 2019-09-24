@@ -1,0 +1,33 @@
+create table Employ
+(
+   Empno INT primary key,
+   Name varchar(30),
+   Dept varchar(30),
+   Desig varchar(30),
+   Basic INT
+);
+
+Insert into Employ values(1,'subhadip','java',
+'programmer',48233);
+
+insert into Employ values(3,'Madhu','Sql',
+'developer',48231);
+
+insert into Employ values(4,'Namit','Java',
+'Programmer',82522);
+commit;
+
+create table Department
+(
+  Deptno INT primary key,
+  Dname varchar(30),
+  Loc varchar(30),
+  City varchar(30),
+  Head varchar(30)
+);
+
+insert into Department 
+values(1,'Sql','Electronic City','Bangalore',
+'Srinivas');
+
+commit;
