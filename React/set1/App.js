@@ -5,7 +5,6 @@ import First from './components/first/first';
 import Second from './components/second/second';
 import Game from './components/game/game'
 
-
 function App() {
   return (
     <div className="App">
