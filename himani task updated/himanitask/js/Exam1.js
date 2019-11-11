@@ -130,7 +130,7 @@ function load()
 
 function LoadQuestion()
 {
-    alert(QuestionNo);
+  //  alert(QuestionNo);
     var x = document.getElementById("previous");
     document.getElementById("submit").style.display = "none";
     document.getElementById("next").style.display = "inline";
@@ -154,7 +154,7 @@ function LoadQuestion()
 function PreviousQuestion() {
     QuestionNo--;
     load();
-    alert(document.getElementById('previous').name);
+//    alert(document.getElementById('previous').name);
     if (document.getElementById('previous').name == 'Step1') {
         //alert("Hi");
         document.getElementById('next').name = 'Step2';
