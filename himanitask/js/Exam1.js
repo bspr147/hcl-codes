@@ -179,8 +179,7 @@ function PreviousQuestion() {
         document.getElementById('HeaderTableStep5').style.backgroundColor = 'Silver';
         document.getElementById('HeaderTableStep4').style.backgroundColor = 'pink';
         document.getElementById('HeaderTableStep2').style.backgroundColor = 'Silver';
-        document.getElementById('HeaderTableStep1').style.backgroundColor = 'Silver';
-
+        //document.getElementById('HeaderTableStep1').style.backgroundColor = 'Silver';
     }
 }
 
