@@ -1,0 +1,24 @@
+Create a class as
+Employ(empno,name,job,salary,leaveAvail)
+    empno -> int
+    name  -> String
+    job   -> String
+    leaveAvail -> int
+Write a code to accept empno,name,job and salary 
+if job is="manager" then leaveAvail 30 else 20 
+Write a code to applyLeave as 
+Accept 
+   empno, leaveTaken,LeaveType 
+   LeaveType is enum contains(EL,PL,ML) 
+   Once leaveApplied then make leaveStaus as PENDING
+   LeaveStaus is enum Contains(APPROVED,PENDING,REJETED)
+LeaveHistory(empno,leaveTaken,LeaveType,LeaveStatus)
+
+
+Write a Program as Accept employ details as 
+   Empno
+   Name
+   Job
+   salary
+if job is manager then 
+   
