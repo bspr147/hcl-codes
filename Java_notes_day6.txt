@@ -1,0 +1,60 @@
+super : If you want to pass values from derived class to base class, then we need the help of super keyword. 
+
+It has 2 forms as 
+
+	1) super as constructor
+
+	2) super as keyword
+
+Abstract class : A class that which can be created, but not implemented and instantiated known as abstract class, abstract class contains both abstract and non-abstract methods, abstract methods needs to be overrided mandetorily by the derived class. 
+
+You cannot create an object to abstract class. 
+
+It will have indirect objects. 
+
+interfaces : Java does not support the concept of multiple inheriatance, to achieve this we need the help of interfaces. An interface contains method declaration and the implementation can be done in the corresponding class, you can add more than one interface to the particular class. 
+
+syntax :
+
+interface interface_name {
+ method(s);
+}
+
+
+You can add an interface to the class as
+
+class class_name implements interface_name {
+
+}
+
+Difference between interface and abstract class 
+_______________________________________________
+
+   -> Abstract class contains both abstract and non-abstract methods,
+	where interface contains only abstract methods. 
+
+   -> interace methods are public and abstract by default. 
+
+   -> Multiple inheritance can be achieved by using interfaces.
+
+   -> An interface can be called from anywhere to anywhere. 
+
+Exception Handling : 
+_____________________
+
+	It is a mechanism of handling the runtime errors during execution of the program. There are 2 types of errors known as
+
+	1) Compile Time
+	2) Runtime
+
+
+
+
+
+
+
+
+
+
+
+
