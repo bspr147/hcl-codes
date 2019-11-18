@@ -47,6 +47,23 @@ _____________________
 	1) Compile Time
 	2) Runtime
 
+To handle errors, we have 3 blocks as 
+
+	1) try block : This block contains statements in which there is possibility of getting runtime errors, the statements which are placed in this block are treated as heavy weighted statements as JVM allocates excess memory to them. 
+
+	2) catch block : Once exception raised in try block, then the control will be forwarded to catch block, this block contains alternative statements for exceptions raised in try block. One try block can contains multiple catch blocks. 
+
+
+	3) finally block : This block contains statements that needs to be executed mandetorily irrespective of try and catch blocks, this block is not mandetory, but all the statements which are placed in this block are executed as mandetory statements. 
+
+Exception is the top level class from which all kinds of exceptions
+are derived. 
+
+
+
+
+
+
 
 
 
