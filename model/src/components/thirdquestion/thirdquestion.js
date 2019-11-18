@@ -19,10 +19,19 @@ export default class ThirdQuestion extends Component {
 
   constructor(props) {  
     super(props);  
-    this.state = {  
+   // alert(localStorage.getItem("company"));
+    if(localStorage.getItem("company")!=undefined) {
+      this.state = {  
+        companyName: localStorage.getItem("company"),
+        instructor : localStorage.getItem("instructor"),
+    };  
+    } else {
+      this.state = {  
         companyName: '',
         instructor : '',
-    };  
+    };    
+    }
+    
 }  
 
 changeText(event) {  
@@ -41,10 +50,10 @@ render() {
         <div>  
             <h2>Simple Event Example</h2>  
             <label htmlFor="name">Enter company name: </label>  
-            <input type="text" id="companyName" onChange={this.changeText.bind(this)}/>  
+            <input type="text" id="companyName" value={this.state.companyName} onChange={this.changeText.bind(this)}/>  
             <br/>
             <label htmlFor="instructor">Enter instructor Name</label>
-            <input type="text" id="instructorName" onChange={this.changeInstructor.bind(this)} />
+            <input type="text" id="instructorName" value={this.state.instructor} onChange={this.changeInstructor.bind(this)} />
             <p>
             <input type="button" onClick={this.nextButton} value="Prev Question" />
             </p>

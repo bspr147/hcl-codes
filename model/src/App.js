@@ -15,6 +15,7 @@ import FirstQuestion from './components/firstquestion/firstquestion';
 import SecondQuestion from './components/secondquestion/secondquestion';
 import ThirdQuestion from './components/thirdquestion/thirdquestion';
 import FinalSummary from './components/finalsummary/finalsummary';
+import Welcome from './components/welcome/welcome';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
     </nav>
     <hr />
     <Switch>
-        <Route exact path='/' component={FirstQuestion} />
+        <Route exact path='/' component={Welcome} />
         <Route exact path='/finalSummary' component={FinalSummary} />
         <Route path='/firstq' component={FirstQuestion} />
         <Route path='/secondq' component={SecondQuestion} />

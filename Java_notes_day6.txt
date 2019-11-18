@@ -59,6 +59,74 @@ To handle errors, we have 3 blocks as
 Exception is the top level class from which all kinds of exceptions
 are derived. 
 
+There are 2 types of exceptions known as 
+
+	(i) Checked Exceptions : These are the exceptions that which occurs at compile time, during compilation JVM feels some erroneous code is there and stops the execution at compile time, can be handled at method level by using throws keyword. 
+
+	(ii) Unchecked Exceptions : These are the exceptions that which occurs at run time and can be handled by using try...catch block. 
+
+
+    throw keyword : If you want to throw exceptions (system/custom) based on condition, then we need the help of throw keyword. 
+
+	Here, we need to throw the exception object. 
+
+
+
+   You can create custom exceptions by using Exception class, any class that which derived from Exception can be treated as Custom Exception. 
+
+class CustomException extends Exception {
+      CustomException(String error) {
+           super(error);
+      }
+}
+
+
+Write a program as accept email (string), and check its valid email or not 
+
+    1) if '@' not found then throw InvalidEmailException
+
+    2) if length of username not betwen 5 to 12 chars then throw
+		InvalidUserException
+
+    else print email address
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

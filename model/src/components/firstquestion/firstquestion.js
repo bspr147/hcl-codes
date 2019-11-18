@@ -6,11 +6,22 @@ import './firstquestion.scss'
 export default class FirstQuestion extends Component {
   constructor(props) {  
     super(props);  
-    this.state = {  
-      firstName: '',
-      lastName : '',
-      mi : ''
-    };  
+  //  alert(localStorage.getItem("fname"));
+    if(localStorage.getItem("fname")!=undefined) {
+      //alert("Setting State Upd");
+      this.state = {  
+        firstName: localStorage.getItem("fname") ,
+        lastName : localStorage.getItem("lname") ,
+        mi : localStorage.getItem("mi")
+      };    
+    } else {
+      this.state = {  
+        firstName: '',
+        lastName : '',
+        mi : ''
+      };  
+    }
+    
 }  
 nextButton = () => {
   // alert(this.state.firstName);
@@ -44,13 +55,13 @@ render() {
         <div>  
             <h2>Simple Event Example</h2>  
             <label htmlFor="firstName">Enter First name: </label>  
-            <input type="text" id="firstName" onChange={this.changeFirstName.bind(this)}/>  
+            <input type="text" id="firstName" value={this.state.firstName} onChange={this.changeFirstName.bind(this)}/>  
             <br/>
             <label htmlFor="lastName">Enter Last Name</label>
-            <input type="text" id="lastName" onChange={this.changeLastName.bind(this)} />
+            <input type="text" id="lastName" value={this.state.lastName} onChange={this.changeLastName.bind(this)} />
             <br/>
             <label htmlFor="mi">Enter MI</label>
-            <input type="text" id="mi" onChange={this.changeMi.bind(this)} />            
+            <input type="text" id="mi" value={this.state.mi} onChange={this.changeMi.bind(this)} />            
             <p>
             <input type="button" onClick={this.nextButton} 
               value="Next Question" />
