@@ -1,0 +1,176 @@
+FileInputStream : used to read data w.r.t. stream of bytes. 
+
+FileInputStream fin=new FileInputStream(filename);
+
+read() : used to read data char/char and returns ascii value. 
+
+it returns -1 once it reaches the EOF.
+
+
+FileOutputStream : Used to write data w.r.t. Stream of bytes. 
+
+
+write() : used to write data char/char 
+
+FileOutputStream fout=new FileOutputStream(filename);
+
+DataOutputStream : Used to write data w.r.t. primitive types. 
+
+writeInt()
+writeDouble()
+writeUTF()
+writeBoolean() 
+
+
+BufferedReader : Allows you to read the data from the keyboard. 
+
+BufferedReader br=new BufferedReader(new 
+	InputStreamReader(System.in));
+
+readLine() : used to read one line from the keyboard. 
+
+ObjectOutputStream : Used to write objects into the file. 
+
+ObjectOutputStream objout=new ObjectOutputStream(filename);
+
+writeObject() : used to write objects. 
+
+ObjectInputStream : Used to read objects from the file. 
+
+ObjectInputStream objin=new ObjectInputStream(filename);
+
+readObject() : used to read objects from file.
+
+
+Serilization is process of writing the custom objects into the file. 
+
+any class object you have to store in file, that must be implemented with Serilizable interface. 
+
+Collections : 
+
+	Collections : 
+
+A collection is an object that contains a group of objects within it. These objects are called the elements of the collection.  The elements of collectin descend from a common parent type.  Collections have an adv. over arrays that collectino can grow to any size unlike arrays. 
+
+Constructors : 
+
+1. CollectionName() -> Creates an empty collection. A void  constructor does not accept any arg.
+
+2. CollectionName(Collection col1) : Creates a new collection that accepts a collection as an arg. and returns the collection containsing the same elements as the collection arg. 
+
+List Interface : This interface extends the collection to handle sequence or a list of objects. Elements can be inserted in a list and can be accessed from a list using their index pos. in the list. 
+
+Set interface : This interface extends the Collection interface to handle sets containing unique elements.  This interface does not allow any duplicate elements in a set. 
+
+SortedSet interface : Used to extends the Set interface to handle the sorted sets. The elements of a set are ordered in ascending order in a sorted set.  
+
+__________________________________________________________
+
+Classes used in the Collections are : 
+
+ArrayList class : This supports dynamic arrays that can grow as needed. In java, standard arrays are of a fixed length. after arrays are created, they cannot grow or shrink, which means that you must know in advance how many elements an array will hold. 
+
+Working with ArrayList() class. 
+
+1. ArrayList class : This supports dynamic arrays that can grow as needed. In java, standard arrays are of a fixed length. after arrays are created, they cannot grow or shrink, which means that you must know in advance how many elements an array will hold. 
+
+Working with ArrayList() class. 
+
+Prog. to demo about ArrayList().
+
+Obtaining an Array from an ArrayList : 
+
+-->  To obtains faster processing times for certain operations.
+
+-->  To pass an array to a method that is not overloaded to accept a colleciton.
+
+-->  To integrate your newer, collection-based code with legacy code that does not understand collections. 
+ 
+Prog. to implement Array from an ArrayList. 
+
+LinkedList() class is used to add the values into the linked list. 
+
+HashSet : It creates a collection that uses a hash table for storage. It stores information by uing a mechanism called hashing.  
+
+It contains the methods as add(), contains() and remove()
+
+Prog. to implement Array from an ArrayList. 
+
+LinkedList() class is used to add the values into the linked list. 
+
+HashSet : It creates a collection that uses a hash table for storage. It stores information by uing a mechanism called hashing.  
+
+It contains the methods as add(), contains() and remove()
+
+Iterator : Display the elements of a collection class in looping order. 
+
+1. Obtain an iterator to the start of the collection by calling the collection's iterator() method. 
+
+2. set up a loop that makes a call to hasNext()
+
+3. To repeat the loop goto next() method. 
+
+Treeset : It provides an implementation of a Set interface that uses a tree for storage.  
+
+Comparators : This interface defines two methods
+
+methods : 
+
+void addFirst(Object obj)
+void addLast(Object obj)
+
+To Remove the elements, 
+
+Object removeFirst()
+Object removeLast()
+
+int[] a=new int[1000];
+
+Vector()
+Vector(int size)
+Vector(int size,int incr)
+Vector(Collection c)
+
+If you want to see the available methods of a specific class, then use the java command as 
+
+javap java.util.ArrayList
+javap java.util.Vector
+
+wrapper class : The concept of Converting the primitive data types into objects and objects into primitive data types is called wrapper. 
+
+Hashtable : It is concrete implementation of a Dictionary.  Used store key/value pairs in a hash table. When using a Hashtable, you specify an object that is used as a key, and the value that you want linked to the key.  
+
+Properties :  It is a subclass of Hashtable. It is used to maintain lists of values in which the key is a String and the value is also String. THe Properities class is used by many other Java Classes, and the object is returned by using System.getProperties() 
+
+
+Generics : 
+
+Generics provide an opportunity to pass data types at runtime, if you want to make any method as write once and apply for all types, then we need the help of generics. Generics can be defined by using <T>. 
+
+
+In place of <T>, we can pass any values at runtime. 
+
+
+Advantages : 
+_____________
+
+	1) Write once and apply for all types. 
+
+	2) Reduce the size of program.
+
+	3) Provides security to data. 
+
+	4) No Typecasting required. 
+
+
+
+
+
+
+
+
+
+
+
+
+
