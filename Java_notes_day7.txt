@@ -1,0 +1,7 @@
+FileInputStream : used to read data w.r.t. stream of bytes. 
+
+FileInputStream fin=new FileInputStream(filename);
+
+read() : used to read data char/char and returns ascii value. 
+
+it returns -1 once it reaches the EOF.
