@@ -143,6 +143,27 @@ Hashtable : It is concrete implementation of a Dictionary.  Used store key/value
 Properties :  It is a subclass of Hashtable. It is used to maintain lists of values in which the key is a String and the value is also String. THe Properities class is used by many other Java Classes, and the object is returned by using System.getProperties() 
 
 
+Generics : 
+
+Generics provide an opportunity to pass data types at runtime, if you want to make any method as write once and apply for all types, then we need the help of generics. Generics can be defined by using <T>. 
+
+
+In place of <T>, we can pass any values at runtime. 
+
+
+Advantages : 
+_____________
+
+	1) Write once and apply for all types. 
+
+	2) Reduce the size of program.
+
+	3) Provides security to data. 
+
+	4) No Typecasting required. 
+
+
+
 
 
 
