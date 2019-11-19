@@ -5,3 +5,56 @@ FileInputStream fin=new FileInputStream(filename);
 read() : used to read data char/char and returns ascii value. 
 
 it returns -1 once it reaches the EOF.
+
+
+FileOutputStream : Used to write data w.r.t. Stream of bytes. 
+
+
+write() : used to write data char/char 
+
+FileOutputStream fout=new FileOutputStream(filename);
+
+DataOutputStream : Used to write data w.r.t. primitive types. 
+
+writeInt()
+writeDouble()
+writeUTF()
+writeBoolean() 
+
+
+BufferedReader : Allows you to read the data from the keyboard. 
+
+BufferedReader br=new BufferedReader(new 
+	InputStreamReader(System.in));
+
+readLine() : used to read one line from the keyboard. 
+
+ObjectOutputStream : Used to write objects into the file. 
+
+ObjectOutputStream objout=new ObjectOutputStream(filename);
+
+writeObject() : used to write objects. 
+
+ObjectInputStream : Used to read objects from the file. 
+
+ObjectInputStream objin=new ObjectInputStream(filename);
+
+readObject() : used to read objects from file.
+
+
+Serilization is process of writing the custom objects into the file. 
+
+any class object you have to store in file, that must be implemented with Serilizable interface. 
+
+
+
+
+
+
+
+
+
+
+
+
+
