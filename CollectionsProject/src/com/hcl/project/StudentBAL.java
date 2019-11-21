@@ -13,6 +13,7 @@ public class StudentBAL {
 	public void readStudentFileBal() {
 		new StudentDAO().readStudentFileDao();
 	}
+	
  	public boolean addStudentBal(Student objStudent) throws StudentException {
 		boolean isAdded=true;
 		
